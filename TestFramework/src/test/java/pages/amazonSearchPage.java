@@ -26,6 +26,7 @@ public class amazonSearchPage {
 	    return element;  
 			}
 	
+	
 	public static WebElement addCart(WebDriver driver) {
 		 element = driver.findElement(By.id("add-to-cart-button"));
 	    return element;  

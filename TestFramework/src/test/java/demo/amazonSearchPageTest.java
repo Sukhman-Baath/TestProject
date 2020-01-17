@@ -1,4 +1,4 @@
-/*package demo;
+package demo;
 
 import java.util.concurrent.TimeUnit;
 
@@ -43,4 +43,4 @@ public class amazonSearchPageTest {
 	}
 
 }
-*/
+
