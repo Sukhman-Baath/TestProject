@@ -4,7 +4,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -16,7 +18,7 @@ public class TestNG_Demo {
 	 private static WebDriver driver = null;
 	 
 	 
-	 @BeforeTest
+	 @BeforeSuite
 	 
 	 
 	public void setUpTest() {
@@ -39,16 +41,18 @@ public class TestNG_Demo {
 		   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		   
-		   object1.setSearchTextbox("iphone 11 pro max");
+		   object1.setSearchTextbox("When I Was You");
 		   object1.clickSearchButton();
 		   object1.searchResultItem();
 		   object1.clickAddButton();
-		   object1.clickPaymentButton();
+		   //object1.clickPaymentButton();
 		   
 		
 		
 	}
-	@AfterTest
+	
+	@AfterSuite
+	
 public void endUpTest() {
 		
 		driver.close();

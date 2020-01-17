@@ -22,13 +22,15 @@ public class amazonSearchPage {
 			}
 
 	public static List<WebElement> searchResult(WebDriver driver) {
-		List<WebElement> element = driver.findElements(By.xpath("//span[contains(text(),'Apple iPhone 11 Pro Max, 256GB, Midnight Green, Fu')]"));
+		List<WebElement> element = driver.findElements(By.xpath("//span[@class='a-truncate-cut'][contains(text(),'When I Was You')]")); 
+				
 	    return element;  
 			}
+
 	
 	
 	public static WebElement addCart(WebDriver driver) {
-		 element = driver.findElement(By.id("add-to-cart-button"));
+		 element = driver.findElement(By.id("submit.preorder"));
 	    return element;  
 			}
 	
