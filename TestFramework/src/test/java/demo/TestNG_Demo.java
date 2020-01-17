@@ -1,27 +1,34 @@
-/*package demo;
+package demo;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.amazonSearchPageObjects;
 
-public class amazonSearchPageTest {
+public class TestNG_Demo {
 
 	 private static WebDriver driver = null;
 	 
 	 
-	public static void main(String[] args) {
+	 @BeforeTest
+	 
+	 
+	public void setUpTest() {
 		
-		amazonSearchTest();
-
-	}
-	
-	public static void amazonSearchTest() {
 		WebDriverManager.chromedriver().setup();
 		   driver = new ChromeDriver();
+		
+	}
+	
+	@Test
+	public static void amazonSearchTest() {
+		
 		
 		   amazonSearchPageObjects object1 = new amazonSearchPageObjects(driver);
 		   
@@ -41,6 +48,13 @@ public class amazonSearchPageTest {
 		
 		
 	}
+	@AfterTest
+public void endUpTest() {
+		
+		driver.close();
+		driver.quit();
+		System.out.println("Test Completed Successfully");
+		
+	}
 
 }
-*/
