@@ -5,7 +5,6 @@
     <classes>
       <class name="demo.TestNG_Demo">
         <methods>
-          <include name="endUpTest"/>
           <include name="setUpTest"/>
           <include name="amazonSearchTest"/>
         </methods>

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12778" started-at="2020-01-17T11:39:02Z" finished-at="2020-01-17T11:39:15Z">
+  <suite name="Default suite" duration-ms="11766" started-at="2020-01-17T22:04:39Z" finished-at="2020-01-17T22:04:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12778" started-at="2020-01-17T11:39:02Z" finished-at="2020-01-17T11:39:15Z">
+    <test name="Default test" duration-ms="11766" started-at="2020-01-17T22:04:39Z" finished-at="2020-01-17T22:04:51Z">
       <class name="demo.TestNG_Demo">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:demo.TestNG_Demo@1ed4004b]" name="setUpTest" is-config="true" duration-ms="4627" started-at="2020-01-17T06:38:58Z" finished-at="2020-01-17T06:39:02Z">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:demo.TestNG_Demo@1ed4004b]" name="setUpTest" is-config="true" duration-ms="3672" started-at="2020-01-17T17:04:35Z" finished-at="2020-01-17T17:04:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="amazonSearchTest()[pri:0, instance:demo.TestNG_Demo@1ed4004b]" name="amazonSearchTest" duration-ms="12754" started-at="2020-01-17T06:39:02Z" finished-at="2020-01-17T06:39:15Z">
+        <test-method status="PASS" signature="amazonSearchTest()[pri:0, instance:demo.TestNG_Demo@1ed4004b]" name="amazonSearchTest" duration-ms="11739" started-at="2020-01-17T17:04:39Z" finished-at="2020-01-17T17:04:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonSearchTest -->
-        <test-method status="PASS" signature="endUpTest()[pri:0, instance:demo.TestNG_Demo@1ed4004b]" name="endUpTest" is-config="true" duration-ms="1485" started-at="2020-01-17T06:39:15Z" finished-at="2020-01-17T06:39:17Z">
+        <test-method status="PASS" signature="endUpTest()[pri:0, instance:demo.TestNG_Demo@1ed4004b]" name="endUpTest" is-config="true" duration-ms="917" started-at="2020-01-17T17:04:51Z" finished-at="2020-01-17T17:04:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endUpTest -->
       </class> <!-- demo.TestNG_Demo -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

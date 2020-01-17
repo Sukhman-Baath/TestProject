@@ -1,31 +1,45 @@
 package demo;
 
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import config.PropertiesFile;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.amazonSearchPageObjects;
 
 public class TestNG_Demo {
 
 	 private static WebDriver driver = null;
-	 
+	 public static String browserName = null;
 	 
 	 @BeforeSuite
 	 
 	 
 	public void setUpTest() {
-		
+		 
+		 
+	  String projectPath = System.getProperty("user.dir");
+		PropertiesFile.getProperties();	
+		 
+		if(browserName.equalsIgnoreCase("chrome"))
+		{
 		WebDriverManager.chromedriver().setup();
 		   driver = new ChromeDriver();
-		
+		}
+		else if(browserName.equalsIgnoreCase("firefox"))
+		{
+		   WebDriverManager.firefoxdriver().setup();
+		   driver = new FirefoxDriver();
+		}
 	}
 	
 	@Test
@@ -58,6 +72,7 @@ public void endUpTest() {
 		driver.close();
 		driver.quit();
 		System.out.println("Test Completed Successfully");
+		PropertiesFile.setProperties();
 		
 	}
 
