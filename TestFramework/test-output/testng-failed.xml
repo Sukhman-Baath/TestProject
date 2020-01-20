@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="listeners.TestNGListeners"/>
-  </listeners>
-  <test name="Test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="TestOnIE(failed)" parallel="tests">
+    <parameter name="browserName" value="ie"/>
     <classes>
-      <class name="listeners.ListenerDemo">
+      <class name="demo.TestNG_AmazonSearch">
         <methods>
-          <include name="test3"/>
-          <include name="test2"/>
+          <include name="setUpTest"/>
+          <include name="setUpTest"/>
+          <include name="amazonSearchTest"/>
+          <include name="endUpTest"/>
         </methods>
-      </class> <!-- listeners.ListenerDemo -->
+      </class> <!-- demo.TestNG_AmazonSearch -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestOnIE(failed) -->
 </suite> <!-- Failed suite [Suite] -->

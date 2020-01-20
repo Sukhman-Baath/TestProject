@@ -1,11 +1,11 @@
 package demo;
 
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -17,28 +17,34 @@ import config.PropertiesFile;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.amazonSearchPageObjects;
 
-public class TestNG_Demo {
+public class TestNG_AmazonSearch {
 
-	 private static WebDriver driver = null;
-	 public static String browserName = null;
-	 
-	 @BeforeSuite
+	private static WebDriver driver = null;
 	 
 	 @Parameters("browserName")
-	public void setUpTest() {
+	 @BeforeTest
+	 
+	
+	public void setUpTest(String browserName) {
 		 
-		 
-	  String projectPath = System.getProperty("user.dir");
-		PropertiesFile.getProperties();	
+		System.out.println("Browser name is "+ browserName);
 		 
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
 		WebDriverManager.chromedriver().setup();
 		   driver = new ChromeDriver();
 		}
+		else if(browserName.equalsIgnoreCase("ie"))
+		{
+		   
+		   WebDriverManager.iedriver().setup();
+		   driver = new InternetExplorerDriver();
+		}
+		
 		else if(browserName.equalsIgnoreCase("firefox"))
 		{
-		   WebDriverManager.firefoxdriver().setup();
+		   
+			WebDriverManager.firefoxdriver().setup();
 		   driver = new FirefoxDriver();
 		}
 	}
@@ -66,7 +72,7 @@ public class TestNG_Demo {
 		
 	}
 	
-	@AfterSuite
+	@AfterTest
 	
 public void endUpTest() {
 		

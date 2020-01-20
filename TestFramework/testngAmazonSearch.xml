@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+  <test name="TestOnChrome">
+  <parameter name="browserName" value="chrome"> </parameter>
+    <classes>
+      <class name="demo.TestNG_AmazonSearch"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="TestOnIE">
+  <parameter name="browserName" value="ie"> </parameter>
+    <classes>
+      <class name="demo.TestNG_AmazonSearch"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="TestOnFireFox">
+  <parameter name="browserName" value="Firefox"> </parameter>
+    <classes>
+      <class name="demo.TestNG_AmazonSearch"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+</suite> <!-- Suite -->
