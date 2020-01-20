@@ -7,30 +7,30 @@ import org.testng.annotations.Test;
 
 //@Listeners({ listeners.TestNGListeners.class })
 
-public class ListenerDemo {
+public class ListenerDemo2 {
 
 	
 	@Test
-	public void test1()
+	public void test4()
 	{
 		System.out.println(" this is test 1");
 	}
 	
 	@Test
-	public void test2()
+	public void test5()
 	{
 		System.out.println(" this is test 2");
-		Assert.assertTrue(false);
+	
 	}
 	
 	@Test
-	public void test3()
+	public void test6()
 	{
 		System.out.println(" this is test 3");
-		throw new SkipException("TEST SKIPPED");
+		
 	}
 	@Test
-	public void test4()
+	public void test8()
 	{
 		System.out.println(" this is test 4");
 	}	

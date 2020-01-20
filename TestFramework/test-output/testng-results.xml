@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="4" passed="2">
+<testng-results skipped="1" failed="1" ignored="0" total="8" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="98" started-at="2020-01-20T21:48:24Z" finished-at="2020-01-20T21:48:24Z">
+  <suite name="Suite" duration-ms="141" started-at="2020-01-20T22:04:25Z" finished-at="2020-01-20T22:04:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="98" started-at="2020-01-20T21:48:24Z" finished-at="2020-01-20T21:48:24Z">
+    <test name="Test" duration-ms="141" started-at="2020-01-20T22:04:25Z" finished-at="2020-01-20T22:04:25Z">
+      <class name="listeners.ListenerDemo2">
+        <test-method status="PASS" signature="test4()[pri:0, instance:listeners.ListenerDemo2@5702b3b1]" name="test4" duration-ms="3" started-at="2020-01-20T17:04:25Z" finished-at="2020-01-20T17:04:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test5()[pri:0, instance:listeners.ListenerDemo2@5702b3b1]" name="test5" duration-ms="3" started-at="2020-01-20T17:04:25Z" finished-at="2020-01-20T17:04:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="test6()[pri:0, instance:listeners.ListenerDemo2@5702b3b1]" name="test6" duration-ms="3" started-at="2020-01-20T17:04:25Z" finished-at="2020-01-20T17:04:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test8()[pri:0, instance:listeners.ListenerDemo2@5702b3b1]" name="test8" duration-ms="5" started-at="2020-01-20T17:04:25Z" finished-at="2020-01-20T17:04:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+      </class> <!-- listeners.ListenerDemo2 -->
       <class name="listeners.ListenerDemo">
-        <test-method status="PASS" signature="test1()[pri:0, instance:listeners.ListenerDemo@27c20538]" name="test1" duration-ms="16" started-at="2020-01-20T16:48:24Z" finished-at="2020-01-20T16:48:24Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:listeners.ListenerDemo@1ed4004b]" name="test1" duration-ms="23" started-at="2020-01-20T17:04:25Z" finished-at="2020-01-20T17:04:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test2()[pri:0, instance:listeners.ListenerDemo@27c20538]" name="test2" duration-ms="6" started-at="2020-01-20T16:48:24Z" finished-at="2020-01-20T16:48:24Z">
+        <test-method status="FAIL" signature="test2()[pri:0, instance:listeners.ListenerDemo@1ed4004b]" name="test2" duration-ms="7" started-at="2020-01-20T17:04:25Z" finished-at="2020-01-20T17:04:25Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -54,7 +72,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="SKIP" signature="test3()[pri:0, instance:listeners.ListenerDemo@27c20538]" name="test3" duration-ms="3" started-at="2020-01-20T16:48:24Z" finished-at="2020-01-20T16:48:24Z">
+        <test-method status="SKIP" signature="test3()[pri:0, instance:listeners.ListenerDemo@1ed4004b]" name="test3" duration-ms="3" started-at="2020-01-20T17:04:25Z" finished-at="2020-01-20T17:04:25Z">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[TEST SKIPPED]]>
@@ -93,11 +111,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="test4()[pri:0, instance:listeners.ListenerDemo@27c20538]" name="test4" duration-ms="3" started-at="2020-01-20T16:48:24Z" finished-at="2020-01-20T16:48:24Z">
+        <test-method status="PASS" signature="test4()[pri:0, instance:listeners.ListenerDemo@1ed4004b]" name="test4" duration-ms="1" started-at="2020-01-20T17:04:25Z" finished-at="2020-01-20T17:04:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test4 -->
       </class> <!-- listeners.ListenerDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
