@@ -141,9 +141,7 @@ public class guru99LoginPage {
 		   object1.setpassTextbox("hUdYqA");
 		   object1.clickresetButton();
 		   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		   Alert alert = driver.switchTo().alert();
-		   alert.accept();
-		   driver.get("http://www.demo.guru99.com/V4/index.php");
+		   
 		   
 		
 		
