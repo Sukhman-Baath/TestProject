@@ -22,7 +22,7 @@ public class TestNG_Demo {
 	 private static WebDriver driver = null;
 	 public static String browserName = null;
 	 
-	 @BeforeSuite
+	 @BeforeTest
 	 
 	 @Parameters("browserName")
 	public void setUpTest() {

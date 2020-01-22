@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test name="TestOnIE(failed)" parallel="tests">
-    <parameter name="browserName" value="ie"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="demo.TestNG_AmazonSearch">
+      <class name="demo.guru99LoginPage">
         <methods>
           <include name="setUpTest"/>
-          <include name="setUpTest"/>
-          <include name="amazonSearchTest"/>
+          <include name="invalidresetTest"/>
           <include name="endUpTest"/>
         </methods>
-      </class> <!-- demo.TestNG_AmazonSearch -->
+      </class> <!-- demo.guru99LoginPage -->
     </classes>
-  </test> <!-- TestOnIE(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="demo.TestNG_Demo">
+      <class name="demo.guru99LoginPage">
         <methods>
           <include name="setUpTest"/>
-          <include name="amazonSearchTest"/>
+          <include name="invalidresetTest"/>
+          <include name="endUpTest"/>
         </methods>
-      </class> <!-- demo.TestNG_Demo -->
+      </class> <!-- demo.guru99LoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
